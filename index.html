@@ -6,14 +6,22 @@
   <title>Liverpool English</title>
   <link rel="icon" href="Logo-Liverpool.png">
 </head>
+<div class="top-bar">
+<a href="#bscore">boys score</a>
+<a href="#gscore">girl score</a>
+<a href="#cw">classwork</a>
+<a href="#hw">home work</a>
 
+
+
+</div>
 <body>
  <img src="liverpool-badge-football-club.gif" width="500" height="500" alt="Liverpool badge animation">
 <br>
 <br>
 <br>
 <br>
-<h1 class="bscore">boys score</h1>
+<h1 id="bscore" class="bscore">boys score</h1>
 <br>
 <h2 class="bscore">whole score(1)</h2>
 <ol text-align: left;>
@@ -24,7 +32,7 @@
 </ol>
 <br>
 <br>
-<h1 class="gscore">girls score</h1>
+<h1 id="gscore" class="gscore">girls score</h1>
 <br>
 <h2 class="gscore">whole score(1)</h2>
 <ol>
@@ -33,7 +41,7 @@
 
 
 </ol>
-<div class="hw">
+<div id="hw" class="hw">
 <h1 >H.W</h1>
 <br>
 <p >2 weekly sheets reading and writing</p>
@@ -41,7 +49,7 @@
 <br>
 <br>
 <br>
-<div class="hw">
+<div id="cw" class="hw">
 <h1 >c.W</h1>
 <br>
 <p >page 67 and 66 lang and skills</p>
@@ -86,6 +94,24 @@ border: 2px solid black;
 background-color: darkgreen;
     color: lightgreen;
 }
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;          /* make it taller */
+  background-color:blue;
+  color: red;
+  
+  display: flex;
+  align-items: center;    /* vertically center content */
+  justify-content: center; /* horizontally center content */
+  z-index: 9999;
+  font-size: 24px;        /* bigger text if needed */
+}
+
+
 
 </style>
 
